@@ -1,0 +1,38 @@
+.content_Menu {
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: -1;
+  }
+  .menu_drink {
+    position: relative;
+    display: block;
+    width: 50vh;
+    height: 100%;
+    left: 0px;
+    float: left;
+    overflow: hidden;
+  }
+  .menu_food {
+    position: relative;
+    display: block;
+    width: 50vh;
+    height: 100%;
+    right: 0px;
+    float: left;
+    overflow: hidden;
+  }
+  .autosize_image {
+    height: 100vh;
+    width: 50vw;
+    
+  }
+  .content_Menu {
+    position: absolute;
+  }
+  @media screen and (max-height: 750px){
+  .content_Menu .autosize_image {
+      height: 115%;
+  }}

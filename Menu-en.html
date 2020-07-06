@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="My Project">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Julia Bordo">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="stylesheet" type="text/css" href="custom styles/styles.css">
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1198/1198986.png" />
+<title>Sky Pyramid</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@469&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="JavaScript/Script.js">
+</script>
+</head>
+<body>
+ 
+  
+
+        <!-- main Information PICTURES -->
+  <section class="content_Menu">
+    <a onclick="openNavDrinks()" href="#">
+        <img class="drinks" src="images/sliced-orange-fruit-in-clear-drinking-glass-3323682 (3).jpg" alt="drinks"> 
+    </a>
+    <a onclick="openNavFood()" href="#">
+      <img class="cover food" src="images/plate-of-rice-and-cooked-meat-1624487 (4).jpg" alt="food"> 
+    </a>  
+  </section>
+
+  <!-- Menu staff Food -->
+  <div id="mySidenavMenu" class="sidenavMenu">
+      <a href="javascript:void(0)" class="closebtnMenu" onclick="closeNavFood()">&times;</a><br>
+      <section class="sectionAboutFood">
+        <div class="insideContainerFood">
+           <h2>Food</h2>
+           <table style="width:100%">
+            <tr>
+              <th>salads</th>
+              <th>gr</th>
+              <th>price</th>
+            </tr>
+            <tr>
+              <td>TUNA TATAKI<p>Pickled daikon, wasabi cream, ginger chips, citrus segments</p></td>
+              <td>140</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <td>DUCK SALAD<p>Salad leaves, cucumber, apple, lychee, cashew nuts, Asian sauce</p></td>
+              <td>170</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+              <td>CAESAR SALAD<p>Romano salad, coconut caesar dressing, parmesan, detox chips</p></td>
+              <td>190</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <th>soups</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>SEAFOOD soup<p>Salad leaves, cucumber, apple, lychee, cashew nuts, Asian sauce</p></td>
+              <td>300</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <td>MISO SOUP<p>Salad leaves, cucumber, apple, lychee, cashew nuts, Asian sauce</p></td>
+              <td>300</td>
+              <td>6.0</td>
+            </tr>
+            <tr>
+              <td>PUMPKIN CREAM SOUP<p>green oil, coconut espuma, ginger chips</p></td>
+              <td>300</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <th>Sushi</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>FRESH TUNA</td>
+              <td>50/30</td>
+              <td>3.0</td>
+            </tr>
+            <tr>
+              <td>FRESH SALMON</td>
+              <td>50/30</td>
+              <td>3.0</td>
+            </tr>
+            <tr>
+              <td>SHRIMP</td>
+              <td>50/30</td>
+              <td>3.0</td>
+            </tr>
+            <tr>
+              <td>SPICY EEL</td>
+              <td>50/30</td>
+              <td>4.5</td>
+            </tr>
+            <tr>
+              <th>Rolls</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>ROLL "big"<p>Rice, salmon, tuna, crab meat, flying fish roe and cream cheese</p></td>
+              <td>250/30</td>
+              <td>9.5</td>
+            </tr>
+            <tr>
+              <td>CALIFORNIA ROLL<p>Rice, flying fish roe, crab meet, avocado, cucumber, seaweeds and Mayonnaise</p></td>
+              <td>250/30</td>
+              <td>10.5</td>
+            </tr>
+            <tr>
+              <td>PHILADELPHIA<p>rice, salmon, eel, cream cheese, avocado, chives, cane sugar</p></td>
+              <td>250/30</td>
+              <td>11.5</td>
+            </tr>
+            <tr>
+              <td>SPICY SALMON ROLL<p>rice, fresh salmon, seaweed, spicy sauce</p></td>
+              <td>150/30</td>
+              <td>7.5</td>
+            </tr>
+            <tr>
+              <td>SPICY TUNA ROLLS<p>Rice, fresh tuna, seaweeds and spicy sauce.</p></td>
+              <td>120/30</td>
+              <td>7.5</td>
+            </tr>
+            <tr>
+              <th>DESSERTS</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>FRESH FRUITS<p>Seasonal fruits</p></td>
+              <td>150</td>
+              <td>6.5</td>
+            </tr>
+            <tr>
+              <td>RASPBERRY-GINGER SORBET<p>lime meringue, marshmallow with rose</p></td>
+              <td>135</td>
+              <td>6.5</td>
+            </tr>
+            <tr>
+              <td>FRESH BERRIES<p>Seasonal berries</p></td>
+              <td>150</td>
+              <td>6.5</td>
+            </tr>
+            <tr>
+              <td>Apple cake</td>
+              <td>250</td>
+              <td>8.5</td>
+            </tr>
+            <tr>
+              <td>EXOTIC mango CREAM</td>
+              <td>150</td>
+              <td>6.0</td>
+            </tr>
+          </table>
+        </div>  
+       </section>
+  </div>
+
+  <!-- Menu Staff Drinks -->
+  <div id="mySidenavMenu2" class="sidenavMenu2">
+    <a href="javascript:void(0)" class="closebtn2" onclick="closeNavDrinks()">&times;</a>
+    <section class="sectionAboutDrinks ">
+      <div class="insideContainerDrinks">
+         <h2>Drinks</h2>
+         <table >
+          <tr>
+            <th>COFFEE</th>
+            <th>GR</th>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+            <td>espresso</td>
+            <td>30</td>
+            <td>1.8</td>
+          </tr>
+          <tr>
+            <td>latto</td>
+            <td>50</td>
+            <td>2.0</td>
+          </tr>
+          <tr>
+            <td>CAPPUCCINO</td>
+            <td>125</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>IRISH COFFEE <p>irish whisky, Espresso and whipped cream</p></td>
+            <td>125/20</td>
+            <td>2.8</td>
+          </tr>
+          <tr>
+            <td>COFFEE BAILEYS<p>Baileys liqueur, Espresso and whipped cream</p></td>
+            <td>125</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <th>TEA</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>green tea</td>
+            <td>150/300</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>black tea</td>
+            <td>150/300</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>red tea</td>
+            <td>150/300</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <th>wine</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>red wine</td>
+            <td>150</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>white tea</td>
+            <td>150</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <th>ALCOHOL DRINKS</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>vodka</td>
+            <td>40</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>gin<p>UK</p></td>
+            <td>40</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>gin<p>Scotland</p></td>
+            <td>40</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>gin<p>Spain</p></td>
+            <td>40</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>AMERICAN WHISKY</td>
+            <td>40</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>irish WHISKY</td>
+            <td>40</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>sake<p>Japan</p></td>
+            <td>150</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>BOTTLED BEER</td>
+            <td>330</td>
+            <td>3.5</td>
+          </tr>
+        </table>
+      </div>  
+     </section>
+  </div>
+
+ 
+
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <!-- PUT navigation links in a list if you don't want them to take over an entire page -->
+            <ul>
+              <li>
+                <a href="About_en.html">About</a>
+              </li>
+              <div>
+                <li>
+                  <a href="History_en.html">History</a>
+                </li>
+                  <li>
+                    <a href="Team_en.html">Our Team</a>
+                  </li>
+              </div>
+              <li>
+                <a href="Menu-en.html">Menu</a>
+              </li>
+              <li>
+                <a href="News_en.html">News</a>
+              </li>
+              <li>
+                <a href="Gallery_en.html">Gallery</a>
+              </li>    
+              <div>
+                <li>
+                  <a href="#">Interior</a>
+                </li>
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Food</a>
+                </li>   
+              </div>    
+              <hr />
+              <li>
+                <a href="Moscow_en.html">About Moscow</a>
+              </li>
+              <li>
+                <a href="Jobs_en.html">Jobs</a>
+              </li>
+              <li>
+                <a href="Reviews_en.html">reviews</a>
+              </li>
+              <li>
+                <a href="Contacts_en .html">Contacts</a>
+              </li> 
+          </ul>
+            <br><br><br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul>
+              <li>
+                <hr >
+                <p>
+                  Космодамианская набережная, 52, стр.6
+                  34-й этаж Swissotel Красные Холмы
+                  <br>2020 All rights reserved
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Open Menu Button-->
+        <div class="openMenu">
+          <div>
+            <span style="cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          <div>
+            <a href="Home ru.html" class="ru-reset">RU</a>
+            <a href="Home eng.html" class="eng-reset, eng">EN</a>
+          </div>
+        </div>
+      
+            
+            
+            <!-- Logo -->
+            <div class="mainHome">
+              <heading class="Logo, smallLogo">
+                <div>
+                  <h1><a href="Home eng.html">Sky Pyramid</a></h1>
+                </div>
+              </heading> <br>
+
+  <section class="caption">
+    <div class="caption1">
+      <p>DRINKS </p>
+    </div>
+      <div class=caption2>
+        <p>FOOD</p>
+      </div>
+  </section>
+
+
+    <footer class="bottom">
+        <p>
+            Космодамианская набережная, 33, стр.3<br>
+            33-й этаж Pyramid Красные Холмы<br>
+            Тел.: 
+            <a class="phone" type="phone" href="+7 (495) 221-53-57">+7 (333) 333-33-33</a><br>
+            <a class="mapLink" href="Map_Full_en.html" target="_blank">Location Map</a>
+        </p>
+      
+        <hr >
+        <p>2020 All rights reserved</p>
+    </footer>
+     
+
+     <!--          Ad menu items
+     Make menu responsive  
+     -->
+</body>

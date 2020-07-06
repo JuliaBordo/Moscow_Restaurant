@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="My Project">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Julia Bordo">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="stylesheet" type="text/css" href="custom styles/styles.css">
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1198/1198986.png" />
+<title>Sky Pyramid</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@469&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="JavaScript/Script.js">
+</script>
+</head>
+<body>
+  <div id="loaderMap" class="centerMap"></div> 
+        <!-- main Information -->
+        <!-- We used a simple Map constructor. Follow this Page to make your own map (https://yandex.ru/map-constructor/) -->
+        <div class="Maps_ContainerFull">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92271936eafff1d7bee22b8122f7f3cc702b2005c693c1a75c2576429e868b5a&amp;width=100%25&amp;height=100vh&amp;lang=en_US&amp;scroll=true"></script>
+          <br>
+        </div>  
+        
+
+
+    <footer class="bottom">
+        <p>
+            Космодамианская набережная, 33, стр.3<br>
+            33-й этаж Pyramid Красные Холмы<br>
+            Тел.: 
+            <a class="phone" type="phone" href="+7 (495) 221-53-57">+7 (333) 333-33-33</a><br>
+            <a class="mapLink" href="mapmap" target="_blank">Location Map</a>
+        </p>
+             <!-- Social Media Links go here. The links lead on the home pages -->
+            <div class="socialMediaIcons">
+              <a href="https://www.facebook.com/" target="_blank" style="font-size:25px" class="fa">&#xf230;</a> 
+              <a href="https://vk.com/" target="_blank" class="fa fa-vk" style="font-size:25px"></a>
+              <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" style="font-size:25px"></a>
+            </div>
+        <hr >
+        <p>2020 All rights reserved</p>
+    </footer>
+
+    <script>
+      document.onreadystatechange = function() { 
+  if (document.readyState !== "complete") { 
+      document.querySelector( 
+        "body").style.visibility = "hidden"; 
+      document.querySelector( 
+        "#loaderMap").style.visibility = "visible"; 
+  } else { 
+      document.querySelector( 
+        "#loaderMap").style.display = "none"; 
+      document.querySelector( 
+        "body").style.visibility = "visible"; 
+  } 
+}; 
+    </script>
+</body>

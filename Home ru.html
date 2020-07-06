@@ -1,0 +1,183 @@
+<!--       This is an ENGLISH Version        -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="My Project">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Julia Bordo">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="custom styles/styles.css">
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1198/1198986.png" />
+<title>Sky Pyramid</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@469&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <!-- PUT navigation links in a list if you don't want them to take over an entire page -->
+    <ul>
+      <li>
+        <a href="#">О нас</a>
+      </li>
+      <div>
+        <li>
+          <a href="#">история</a>
+        </li>
+          <li>
+            <a href="#">команда</a>
+          </li>
+      </div>
+      <li>
+        <a href="#">меню</a>
+      </li>
+      <li>
+        <a href="#">Neновостиws</a>
+      </li>
+      <li>
+        <a href="#">галерея</a>
+      </li>    
+      <div>
+        <li>
+          <a href="#">интерьер</a>
+        </li>
+        <li>
+          <a href="#">события</a>
+        </li>
+        <li>
+          <a href="#">еда</a>
+        </li>   
+      </div>    
+      <hr />
+      <li>
+        <a href="#">о москве</a>
+      </li>
+      <li>
+        <a href="#">вакансии</a>
+      </li>
+      <li>
+        <a href="#">отзывы</a>
+      </li>
+      <li>
+        <a href="#">контакты</a>
+      </li> 
+  </ul>
+    <br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul>
+      <li>
+        <hr >
+        <p>
+          Космодамианская набережная, 52, стр.6
+          34-й этаж Swissotel Красные Холмы
+          <br>2020 Все Права Защищены
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Open Menu Button-->
+<div class="openMenu">
+  <div>
+    <span style="cursor:pointer" onclick="openNav()">&#9776; открыть</span>
+  </div>
+  <div>
+    <a href="Home ru.html" class="ru-reset, ru">RU</a>
+    <a href="Home eng.html" class="eng-reset">EN</a>
+  </div>
+</div>
+
+<!-- main imnformation -->
+<div class="mainHome">
+  <heading class="Logo">
+    <div>
+      <h1>Sky <br>Pyramid</h1>
+      <p>Бар и Ресторан</p>
+    </div>
+  </heading> 
+</div>
+<section class="sectionHome">
+  <hr>
+  <p>Все лучшее начинается здесь! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minima pariatur, perferendis illo consectetur deserunt esse. Possimus porro ipsa, animi ea voluptatibus fugiat distinctio, vitae ex soluta reiciendis dicta consectetur.</p>
+  <hr><br>
+ </section><br>
+
+ <!-- Modal Box --------------------->
+ <div class="container">
+  <a class="button" href="#popup">Забронировать столик</a>
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <div class="popup__photo">
+        <img src="https://1.s7.arpaddr.com/2/BF/50/650669056502531375/fullsize.jpg" alt="">
+      </div>
+      <div class="popup__text">
+        <h1>Звоните нам!</h1>
+        <p>
+          Космодамианская набережная, 33, стр.3<br>
+          33-й этаж Pyramid Красные Холмы<br>
+          E-mail: Example@gmail.com<br>
+          Тел.: 
+          <a class="phone" type="phone" href="+7 (495) 221-53-57">+7 (333) 333-33-33</a><br></p>
+      </div>
+      <a class="popup__close" href="#">X</a>
+    </div>
+  </div>
+</div>
+
+<footer class="bottom">
+  <p>
+      Космодамианская набережная, 33, стр.3<br>
+      33-й этаж Pyramid Красные Холмы<br>
+      Тел.: 
+      <a class="phone" type="phone" href="+7 (495) 221-53-57">+7 (333) 333-33-33</a><br>
+      <a class="mapLink" href="mapmap">Посмотреть на карте</a>
+  </p>
+       <!-- Social Media Links go here. The links lead on the home pages -->
+      <div class="socialMediaIcons">
+        <a href="https://www.facebook.com/" target="_blank" style="font-size:25px" class="fa">&#xf230;</a> 
+        <a href="https://vk.com/" target="_blank" class="fa fa-vk" style="font-size:25px"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" style="font-size:25px"></a>
+      </div>
+  <hr >
+  <p>2020 Все права Защищены</p>
+</footer>
+
+
+<!-- Menu Script --------------->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<!-- WHAT's Next
+
+  Check all selectors
+  check if everything is in place
+
+It might take a while to load your pages so 
+it could be helpful to add a loading bar:
+let's start from transitioning between two languages first.
+
+
+-->
+
+     
+</body>
+</html>

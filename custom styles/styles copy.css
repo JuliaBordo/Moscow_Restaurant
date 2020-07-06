@@ -1,0 +1,1086 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(231, 230, 230); 
+    z-index: 1;
+    background: rgb(48, 48, 48);
+    margin: 0;
+   
+  /* background image is transparent. It is centered */
+  }
+  body:before {
+    content: "";
+    position: absolute; 
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/30/08/13/moscow-1556561_960_720.jpg");
+    filter: contrast(160%) brightness(90%) grayscale(100%) saturate(15);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+   
+  }
+
+  /* Menu starts here ------------------ */
+  
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(219,219,214);
+    background: linear-gradient(180deg, rgba(219,219,214,1) 0%, rgba(250,250,247,1) 34%, rgba(255,255,255,1) 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay ul, li {
+    list-style: none;
+  }
+  .overlay li a {
+    display: inline-block;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .overlay-content hr {
+      width: 25%;
+      border: 1px solid goldenrod;
+      margin-top: 40px;
+  }
+  
+  .overlay-content div {
+     border: 1px solid goldenrod;
+     width: 25%;
+     margin: 10px auto;
+  }
+  .overlay-content p {
+      color: black;
+  }
+  
+  
+  .overlay a {
+    display: inline-block; 
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+    transition: ease-out 0.5s;
+  }
+  .overlay a:hover {
+    color: grey; 
+  }
+  
+  .overlay a:hover .overlay a:focus {
+    color: rgb(80, 79, 79);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    
+  }
+  .overlay p {
+    color: rgb(94, 93, 93);
+    padding-bottom: 10px;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+
+  
+
+  /* Open Button ---------- */
+  .openMenu div {
+    height: 40px;
+    padding: 0 30px 20px 30px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  .openMenu div:nth-child(1) {
+    float: right;
+    width: 50%; 
+    text-align: right;
+  }
+  .openMenu div:nth-child(2) {
+    float: right;
+    width: 50%;
+    font-size: 30px;
+    text-align: left;
+  }
+  .openMenu {
+    margin: 0 ;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .openMenu span {
+    transition: ease-in-out 0.5s;
+    font-size: 30px;
+
+  }
+  .openMenu span:hover {
+    color: grey;
+  }
+
+
+
+  /* Language change ---------------------------*/
+  /* depends on the languge! -------------------- */
+  .openMenu .ru-reset {
+    margin-top: 15px;
+    padding: 2px;
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .openMenu .ru-reset:hover {
+    color: rgb(175, 137, 39);
+  }
+  .openMenu .eng-reset {
+    margin-top: 15px;
+    padding: 2px;
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .openMenu .eng-reset:hover {
+    color: rgb(175, 137, 39);
+  }
+
+  /* Language When chosen */
+  .openMenu .eng {
+    border: 1px solid rgba(231, 230, 230, 0.63);
+    padding: 2px;
+    color: rgb(175, 137, 39);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .openMenu .eng:hover {
+    color: rgb(231, 230, 230);
+  }
+  .openMenu .ru {
+    border: 1px solid rgba(231, 230, 230, 0.63);
+    padding: 2px;
+    color: rgb(175, 137, 39);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .openMenu .ru:hover {
+    color: rgb(231, 230, 230);
+  }
+
+  /* ----------------------------------------------- */
+
+  
+
+
+  /*main content Home Logo -------------------- */
+  .mainHome h1 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(175, 137, 39);
+    font-weight: 100;
+    margin: 0 15px;
+    padding-top: 15px;
+  }
+  .Logo {
+    text-align: center;
+     font-size: 25px;
+    
+  }
+  .Logo div h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .Logo div p {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+  .smallLogo {
+    text-align: center;
+    
+  }
+  .smallLogo a {
+    text-decoration: none;
+    color: rgb(175, 137, 39);
+  }
+
+  /*main content paragraph --------------*/
+  .sectionHome {
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+  }
+
+  /*modal -----------------------*/
+  .container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  
+  .button {
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid rgb(177, 135, 29);
+    border-radius: 0.5;
+    background-color: rgba(255, 255, 255, 0.603);
+    color: rgb(29, 28, 28);
+    padding: 1rem 2rem;
+    transition: ease-in-out 0.3s;
+  }
+  .button:hover {
+    background-color: rgba(214, 214, 214, 0.918);
+  }
+  
+  .popup {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hiden;
+    -webkit-transition: .64s ease-in-out;
+    transition: .64s ease-in-out;
+  }
+  .popup-inner {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 80%;
+    background-color: #fff;
+    -webkit-transform: rotate(32deg);
+            transform: rotate(32deg);
+    -webkit-transition: .64s ease-in-out;
+    transition: .64s ease-in-out;
+  }
+  .popup__photo {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+            align-items: flex-end;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .popup__photo img {
+    width: auto;
+    height: 100%;
+  }
+  .popup__text {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+  }
+  .popup__text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #0A0A0A;
+    font-family: 'Oswald', sans-serif;
+  }
+  .popup__text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    color: #686868;margin: auto;
+    line-height: 1.5;
+  }
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .popup:target .popup-inner {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .popup__close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0A0A0A;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  
+
+  
+
+  /* ABOUT PAGE --------------------------- */
+ .sectionAbout {
+   width: 80%;
+   margin: 0 auto;
+ }
+.insideContainer {
+  height: 380px; 
+  overflow: auto;
+  padding: 5px;
+}
+.insideContainer::-webkit-scrollbar {
+  width: 0.5em;
+}
+.insideContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 250, 250, 0.377);
+}
+.insideContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* History ------------------------------*/
+/* Timeline -----------------------------*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgb(48, 47, 47);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: rgba(221, 221, 221, 0.781);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerTime {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerTime::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(221, 221, 221);
+  border: 4px solid rgb(175, 137, 39);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Place the container to the left */
+.leftTime {
+  left: 0;
+}
+
+/* Place the container to the right */
+.rightTime {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.leftTime::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  right: 25px;
+  border: medium solid rgba(255, 255, 255, 0.308);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.61);
+}
+
+/* Add arrows to the right container (pointing left) */
+.rightTime::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  left: 25px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(255, 255, 255, 0.61) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.rightTime::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.61);
+  position: relative;
+}
+.content h2 {
+  font-size: 20px;
+}
+.content p {
+  font-size: 15px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 610px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .containerTime {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+.containerTime::before {
+    left: 60px;
+    border: medium solid rgba(255, 255, 255, 0.705);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(255, 255, 255, 0.61) transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .leftTime::after, .rightTime::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .rightTime {
+    left: 0%;
+  }
+}
+
+/* TEAM PAGE --------------------------- */
+.TeamContainer {
+ background-color: rgba(29, 28, 28, 0.664);
+}
+
+.teamPage {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+.portrait {
+  position: relative;
+  height: auto;
+  width: 50%;
+  padding: 5px;
+  font-size: 16px;
+}
+.portrait h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.portrait img {
+  max-width: 100%;
+  filter: grayscale(70%);
+}
+.portrait-1 {
+  float: right;
+}
+.portrait-2 {
+  float: right;
+}
+
+/* MENU PAGE pictures ----------------------------------- */
+.content_Menu {
+  position: absolute;
+  z-index: -1;
+}
+.content_Menu img {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+  filter: grayscale(67%) brightness(50%) contrast(70%);
+  transition: 0.3s;
+}
+.content_Menu img:hover {
+  filter: grayscale(50%) brightness(50%)
+}
+
+.cover {
+    object-fit: cover;
+}
+/* Menu Caption ----------------- */
+.caption {
+  position: relative; 
+}
+.caption div {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 110px;
+  font-weight: 800;
+}
+.caption div p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.caption1 {
+ float: left;
+
+}
+.caption2 {
+  float: left; 
+}
+
+/* Menu content side ----------*/
+/* The side navigation menu FOOD */
+.sidenavMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgb(219,219,214);
+    background: linear-gradient(180deg, rgba(219,219,214,1) 0%, rgba(250,250,247,1) 34%, rgba(255,255,255,1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 40px 0;
+}
+
+/* ----------------- MENU FOOD ----------*/
+.sectionAboutFood {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.sectionAboutFood h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: black;
+}
+.sectionAboutFood table {
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.sectionAboutFood table th {
+  text-align: left;
+  padding-top:  10px;
+  font-size: 17px;
+}
+.sectionAboutFood table td {
+  padding: 5px 0; 
+  padding-right: 10px;
+  font-weight: 300;
+}
+.sectionAboutFood table p {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 0 2px;
+}
+.insideContainerFood {
+ height: 80vh; 
+ overflow: auto;
+ padding: 5px;
+}
+.insideContainerFood::-webkit-scrollbar {
+ width: 0.5em;
+}
+.insideContainerFood::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 6px rgba(255, 250, 250, 0.377);
+}
+.insideContainerFood::-webkit-scrollbar-thumb {
+ background-color: rgba(169, 169, 169, 0);
+ outline: 1px solid slategrey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavMenu .closebtnMenu {
+  text-decoration: none;
+  color: black; 
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: 0.3s;
+}
+.closebtnMenu:hover {
+  color: grey;
+}
+
+/* --------------------- Drinks -----*/
+.sidenavMenu2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: rgb(219,219,214);
+    background: linear-gradient(180deg, rgba(219,219,214,1) 0%, rgba(250,250,247,1) 34%, rgba(255,255,255,1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+/* ----------------- MENU Drinks ----------*/
+.sectionAboutDrinks {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.sectionAboutDrinks h2 {
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.sectionAboutDrinks table {
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.sectionAboutDrinks table th {
+  text-align: left;
+  padding-top:  10px;
+  font-size: 17px;
+}
+.sectionAboutDrinks table td {
+  padding: 5px 0; 
+  padding-right: 10px;
+  font-weight: 300;
+}
+.sectionAboutDrinks table p {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 0 2px;
+}
+.insideContainerDrinks {
+ height: 80vh; 
+ overflow: auto;
+ padding: 5px;
+}
+.insideContainerDrinks::-webkit-scrollbar {
+ width: 0.5em;
+}
+.insideContainerDrinks::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 6px rgba(255, 250, 250, 0);
+}
+.insideContainerDrinks::-webkit-scrollbar-thumb {
+ background-color: rgba(169, 169, 169, 0);
+ outline: 1px solid slategrey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavMenu2 .closebtn2 {
+  text-decoration: none;
+  color: black; 
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+  transition: 0.3s;
+}
+.closebtn2:hover {
+  color: grey;
+}
+
+/* ------------------------- News Page -*/
+.NewsContainer {
+  background-color: rgba(29, 28, 28, 0.664);
+ }
+ 
+ .NewsPage {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+.newspic {
+  position: relative;
+  height: auto;
+  width: 50%;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+.newspic p {
+  text-align: left;
+}
+.newspic h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.newspic img {
+  max-width: 100%;
+  filter: grayscale(70%);
+  
+}
+.picture-1 {
+  float: right;
+  
+}
+.picture-2 {
+  float: right;
+}
+
+
+/* Gallery PAGE ---------*/
+/*slides */
+/* Slideshow container */
+.galleryPage {
+  text-align: center;
+  text-transform: 0.2em;
+}
+.carousel-item img{
+  width: auto;
+  max-height: 500px;
+  margin: auto; 
+  display: block;
+  filter: grayscale(50%)
+  }
+
+  /* About Moscow Page */
+  .MoscowFilter {
+    background-color: rgba(128, 128, 128, 0.493);
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    
+  }
+  .sectionAboutMoscow {
+    width: 90%; 
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .contentMoscow {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  .MoscowC span {
+   margin: 0 50px;
+  }
+  /* The side navigation menu */
+  .sidenavMoscow {
+    z-index: -1;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(226, 226, 226); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenavMoscow a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavMoscow a:hover{
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavMoscow .closebtnMoscow {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#mainMoscow {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* -------------JOBS PAGE -------*/
+.Jobs_Container {
+   margin-top: 100px;
+   padding: 10px;
+   background-color: rgba(255, 255, 255, 0.26);
+}
+.Jobs_Container a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+.Jobs_Container a:hover {
+  color: rgb(180, 179, 179);
+}
+
+/* reviews PAGE ----------- */
+.carousel-item div{
+   margin-top: 40px;
+   background-color: rgba(126, 126, 126, 0.432);
+   height: 20vh;
+   padding-top: 50px;
+   font-size: 20px;
+   
+}
+.carousel-item div p {
+  text-align: center;
+}
+.carousel-item div span {
+  text-transform: uppercase;
+  text-align: left;
+  font-style: italic;
+}
+
+.Maps_Container {
+  padding: 10px;
+}
+
+/* Loading Page --------------- */
+#loaderMap { 
+  border: 12px solid rgba(218, 165, 32, 0.781); 
+  border-radius: 50%; 
+  border-top: 12px solid #444444; 
+  width: 70px; 
+  height: 70px; 
+  animation: spin 1s linear infinite; 
+} 
+
+@keyframes spin { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+} 
+
+.centerMap { 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: auto; 
+} 
+
+
+
+/* footer container -----------------*/
+footer.bottom {
+  position: fixed; 
+  bottom: 0;
+  color: rgb(43, 42, 42);
+  text-transform: capitalize;
+  background-color: rgba(226, 226, 226, 0.726);
+  width: 100%;
+  text-align: center;
+  
+}
+footer p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+footer hr {
+  border: 1px solid rgb(175, 137, 39); 
+  width: 25%;
+  margin: 5px auto 2px auto; 
+}
+.phone {
+  text-decoration: none;
+  color: black;
+}
+.mapLink {
+  text-decoration: none;
+  color: rgb(82, 81, 81);
+  transition: 0.3s;
+}
+.mapLink:hover {
+  color: grey;
+}
+footer .socialMediaIcons {
+  word-spacing: 5px;
+}
+footer .socialMediaIcons a {
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  transition: 0.3s;
+}
+footer .socialMediaIcons a:hover {
+  color: grey;
+}
+footer p:nth-of-type(2) {
+  margin: 5px 0 5px 0;
+}
+
+/* Responsive ------------------------- */
+
+@media(max-width: 710px) {
+  .overlay-content hr {
+    width: 50%;
+  }
+  .overlay-content hr:nth-of-type(2) {
+    width: 98%;
+  }
+  .overlay-content div {
+    width: 50%;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 45px;
+  }
+  .overlay-content p {
+    font-size: 13px;
+    width: 98%;
+  }
+  .overlay-content ul {
+    padding: 0;
+  }
+  .openMenu div:nth-child(2) {
+    font-size: 20px;
+  }
+  .openMenu span {
+    font-size: 20px;
+  }
+  section.sectionHome {
+    font-size: 15px;
+    width: 80%; 
+  }
+  footer p {
+    font-size: 14px;
+  }
+  .popup__text {
+    padding: 2rem;
+  }
+  .caption div {
+    font-size: 50px;
+  }
+  .sidenavMenu {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .newspic {
+    width: 100%;
+  }
+  .newspic p:nth-of-type(2) {
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  .carousel-item div {
+    font-size: 17px;
+    font-style: normal;
+    
+  }
+  .carousel-item div p {
+    padding: 0 50px;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .insideContainer {
+    height: 50vh;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .insideContainer {
+    height: 60vh;
+  }
+}
+@media screen and (max-height: 450px) {
+    .sidenavMoscow {padding-top: 15px;}
+    .sidenavMoscow a {font-size: 18px;}
+
+}
